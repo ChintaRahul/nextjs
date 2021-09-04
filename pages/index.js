@@ -35,7 +35,7 @@ const HomePage = (props) => {
           content="Browse a huge list of heighly active React meetups!"
         />
       </Head>
-      <MeetUpList meetups={props.meetups} />;
+      <MeetUpList meetups={props.meetups} />
     </Fragment>
   );
 };

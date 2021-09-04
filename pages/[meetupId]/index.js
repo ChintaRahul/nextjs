@@ -57,7 +57,7 @@ export async function getStaticPaths() {
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
-    fallback: false, // it means added all possible paths
+    fallback: 'blocking', // it means added all possible paths
     // fallback: true,// indicate that we haven't added all paths, but it can use the other most used path for rendering other pages
   };
 }
